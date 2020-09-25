@@ -9,5 +9,6 @@ TV  remote controller
 git clone https://github.com/freddiefujiwara/tv_remote_controller
 cd tv_remote_controller
 vim base_url.txt # edit your api endpoint
+flutter pub get
 flutter build web
 ```
