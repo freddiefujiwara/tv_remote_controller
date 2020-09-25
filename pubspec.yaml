@@ -13,9 +13,17 @@ dependencies:
     sdk: flutter
   provider: ^4.3.2+2
   cupertino_icons: ^1.0.0
+  http: ^0.12.2
+  flutter_launcher_icons: ^0.8.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 flutter:
   uses-material-design: true
+
+flutter_icons:
+  android: true
+  ios: true
+  web: true
+  image_path: 'icon/icon.png'
