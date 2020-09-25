@@ -21,6 +21,8 @@ dev_dependencies:
     sdk: flutter
 flutter:
   uses-material-design: true
+  assets:
+    - ./base_url.txt
 
 flutter_icons:
   android: true
