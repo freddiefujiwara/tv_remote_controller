@@ -13,7 +13,7 @@ void main() {
 
   tearDown(() async {
     final File file = File('./base_url.txt');
-    await file.deleteSync();
+    file.deleteSync();
     await file.writeAsString("");
   });
   test('first test', () {
