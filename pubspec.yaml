@@ -15,14 +15,16 @@ dependencies:
   cupertino_icons: ^1.0.0
   http: ^0.12.2
   flutter_launcher_icons: ^0.8.0
+  path_provider: ^1.6.18
 
 dev_dependencies:
+  test: ^1.15.4
   flutter_test:
     sdk: flutter
 flutter:
   uses-material-design: true
   assets:
-    - ./base_url.txt
+   - ./base_url.txt
 
 flutter_icons:
   android: true

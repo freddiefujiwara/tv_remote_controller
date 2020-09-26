@@ -11,63 +11,63 @@ class TVModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  void channel(key) async {
+  Future<void> channel(key) async {
     String baseUrl = await rootBundle.loadString('./base_url.txt');
     await http.get("${baseUrl.trim()}/tv_${key}");
     print('CHANNEL: ${key} ${baseUrl.trim()}/tv_${key}');
     notifyListeners();
   }
 
-  void menu() async {
+  Future<void> menu() async {
     String baseUrl = await rootBundle.loadString('./base_url.txt');
     await http.get("${baseUrl.trim()}/tv_menu");
     print('MENU: ${baseUrl.trim()}/tv_menu');
     notifyListeners();
   }
 
-  void volumeUp() async {
+  Future<void> volumeUp() async {
     String baseUrl = await rootBundle.loadString('./base_url.txt');
     await http.get("${baseUrl.trim()}/tv_vol_up");
     print('VOLUME UP: ${baseUrl.trim()}/tv_vol_up');
     notifyListeners();
   }
 
-  void volumeDown() async {
+  Future<void> volumeDown() async {
     String baseUrl = await rootBundle.loadString('./base_url.txt');
     await http.get("${baseUrl.trim()}/tv_vol_down");
     print('VOLUME DOWN: ${baseUrl.trim()}/tv_vol_down');
     notifyListeners();
   }
 
-  void ok() async {
+  Future<void> ok() async {
     String baseUrl = await rootBundle.loadString('./base_url.txt');
     await http.get("${baseUrl.trim()}/tv_submit");
     print('OK: ${baseUrl.trim()}/tv_submit');
     notifyListeners();
   }
 
-  void up() async {
+  Future<void> up() async {
     String baseUrl = await rootBundle.loadString('./base_url.txt');
     await http.get("${baseUrl.trim()}/tv_up");
     print('UP: ${baseUrl.trim()}/tv_up');
     notifyListeners();
   }
 
-  void down() async {
+  Future<void> down() async {
     String baseUrl = await rootBundle.loadString('./base_url.txt');
     await http.get("${baseUrl.trim()}/tv_down");
     print('DOWN: ${baseUrl.trim()}/tv_down');
     notifyListeners();
   }
 
-  void left() async {
+  Future<void> left() async {
     String baseUrl = await rootBundle.loadString('./base_url.txt');
     await http.get("${baseUrl.trim()}/tv_left");
     print('LEFT: ${baseUrl.trim()}/tv_left');
     notifyListeners();
   }
 
-  void right() async {
+  Future<void> right() async {
     String baseUrl = await rootBundle.loadString('./base_url.txt');
     await http.get("${baseUrl.trim()}/tv_right");
     print('RIGHT: ${baseUrl.trim()}/tv_right');
